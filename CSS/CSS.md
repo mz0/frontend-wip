@@ -312,9 +312,33 @@ In the following example, the image will be aligned to the right of the div elem
 </div>
 ￼
 ```css
-.child {  float: right;}
+.child { float: right; }
 ```
-The following displays in the web browser:
+The following displays in the web browser: ???
+
+## CSS units of measurement
+
+### Absolute units
+* Q - Quater-millimeter (0.25 mm)
+* mm - millimeter
+* cm
+* in - inch (25.4 mm)
+* pc - Pica (1/6 in  ≈ 4.233 mm)
+* pt - Point (1/72 in ≈ .353 mm)
+* px - Pixel (1/96 in ≈ 0.265 mm)
+
+### Relative units
+* em - Font-size
+* ex
+* ch
+* rem
+* lh
+* rlh - root element (`<html>`) height
+* vw - 1% of viewport height
+* vh - 1% of the viewport height
+* vmin - 1% of the smaller dimension of viewport
+* vmax - 1% of the larger dimension of viewport
+* % - Denotes a percentage value in relation to its parent element
 
 
 CSS Reference (Mozilla)
