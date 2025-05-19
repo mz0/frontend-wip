@@ -24,3 +24,4 @@ The `<iframe>` is the *inline frame* element that embeds an HTML page into anoth
 * `loading` - `eager` or `lazy` loading
 * `title` - for accessibility purposes: `<iframe src="hist.html" title="HTML history form 1993 to present days (last updated 2025-05-14)"> </iframe>`
 
+See also: https://studio.support.brightcove.com/publish/choosing-correct-embed-code.html
