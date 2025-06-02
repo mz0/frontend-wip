@@ -1,0 +1,95 @@
+* {
+	padding: 0;
+	margin: 0;
+	color: pink;
+}
+
+body { padding: 30px; }
+
+.container {
+	min-height: 100vh;
+	background-color:bisque;
+}
+
+.letters {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	text-transform:uppercase;
+	font-size: 60px;
+}
+
+/* Add rules for the element 'p' present inside the class 'letters' using descendant selector */
+.letters p {
+  text-align: center;
+  background-color: rgb(250, 150, 100);
+  width: 70px;
+  margin-right: 1.5px;
+  border-radius: 15%;
+  border-color: rgb(250, 125, 75);
+  border-style: solid;
+}
+
+.letters:hover p:nth-child(even) {
+	transform: rotateY(360deg) /* skew(10deg) */;
+	transition: 0.5s;
+}
+.letters:hover p:nth-child(odd) {
+	transform: rotateX(720deg);
+	transition: 1.5s;
+}
+
+.minutes {
+	animation: cycle 6s infinite linear;
+}
+
+.hours {
+	animation: cycle 60s infinite linear;
+}
+
+@keyframes cycle {
+	from { transform: rotate(0deg);}
+	to  {transform: rotate(360deg);}
+}
+
+@keyframes foo {
+  0% {transform: rotate(100deg);}
+ 30% {opacity: 1;}
+ 50% {opacity: 0.50;}
+ 70% {opacity: 1;}
+100% {transform: rotate(50deg);}
+}
+
+@keyframes bar0 {
+	from { width: 50px; }
+	to  { width: 100px; }
+}
+
+@keyframes bar {
+	0% { width: 50px; }
+	50% { background-color: azure; height: 20px; }
+	100%  { width: 100px; }
+}
+
+.box {
+	background-color: lightcoral;
+	width: 50px;
+	height: 50px;
+	animation: bar 3s infinite ease-in;
+}
+
+@keyframes bounce {
+	from { transform: translate3d(0,0,0); }
+	to { transform: translate3d(640px,0,0); }
+}
+
+#ball {
+	width: 64px; height: 64px;
+	border-radius: 50%;
+	background-color: blue;
+
+	animation: bounce 2s;
+	animation-direction: alternate;
+	animation-iteration-count: 16;
+}
