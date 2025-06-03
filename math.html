@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MathJax Example</title>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+                         <!-- src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" --> 
+</head>
+<body>
+  <h1>MathJax Example</h1>
+  <p>Inline: $E=mc^2$</p>
+  <p>Displayed (centered): $$\sum_{i=1}^n i = \frac{n(n+1)}{2}$$</p>
+</body>
+</html>

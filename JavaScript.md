@@ -1,12 +1,13 @@
 # JavaScript
 
-was built in only 10 days in 1995 by a single person, Brendan Eich, who was tasked with building a simple scripting language
-to be used in version 2 of the Netscape browser.
+was built in 10 days in 1995 by a single person, Brendan Eich, who was tasked with building
+a simple scripting language to be used in version 2 of the Netscape browser.
+
 It was initially called LiveScript, but since the Java language was so popular at the time,
 the name was changed to JavaScript - although Java and JavaScript are in no way related.
 
 For the first few years, after it was built, JavaScript was a simple scripting language to add mouseover effects
-and other interactivity. Those effects were being added to webpages using the <script> HTML element.
+and other interactivity. Those effects were being added to webpages using the `<script>` HTML element.
 
 Inside each of the script elements, there could be some JavaScript code.
 Due to the rule that HTML, CSS, and JavaScript must be backward compatible,
@@ -25,11 +26,11 @@ There have been more than 12 [ECMA-262 updates](https://github.com/tc39/ecma262)
 1. ES3 (ECMAScript 3rd Edition) - December 1999: Introduced significant features like try...catch for error handling,
    regular expressions, switch statements, and improved support for internationalization.
 1. ES5 (ECMAScript 5th Edition) - December 2009: Brought about important enhancements such as strict mode ("use strict"),
-   `JSON`[*], and new methods for arrays (forEach, map, filter, etc.) and objects (Object.create, Object.defineProperty, etc.)
+   `JSON`[1], and new methods for arrays (forEach, map, filter, etc.) and objects (Object.create, Object.defineProperty, etc.)
 1. ES6 (ECMAScript 2015) - June 2015: A major revision introducing classes, modules, arrow functions,
    `let` and `const` declarations, promises, iterators and generators, template literals, destructuring, default parameters,
    [`Symbol` primitive](https://www.keithcirkel.co.uk/metaprogramming-in-es6-symbols/), and more.
-1. ES2016 (ECMAScript 2016) - June 2016: Added the Array.prototype.includes() method and the exponentiation operator (**)
+1. ES2016 (ECMAScript 2016) - June 2016: Added the Array.prototype.includes() method and the exponentiation operator (`**`)
 1. ES2017 (ECMAScript 2017) - June 2017: Introduced async/await for asynchronous operations, Object.values(), Object.entries(), and string padding methods.
 1. ES2018 (ECMAScript 2018) - June 2018: Featured asynchronous iteration (for-await-of), rest/spread properties for objects, and promise finally.
 1. ES2019 (ECMAScript 2019) - June 2019: Included Array.prototype.flat() and flatMap(), Object.fromEntries(), and String.prototype.trimStart()/trimEnd().
@@ -47,7 +48,7 @@ There have been more than 12 [ECMA-262 updates](https://github.com/tc39/ecma262)
 You may see that after ES6, the ECMAScript standard shifted to annual releases with the year of finalization in the name.
 So, instead of ES7, ES8, etc., we have ES2016, ES2017, and so on.
 
-[*] Around 2001, Douglas Crockford came up with a data interchange format *JSON*, which is short for JavaScript Object
+[1] Around 2001, Douglas Crockford came up with a data interchange format *JSON*, which is short for JavaScript Object
 Notation. ECMAScript 5 added the built-in `JSON` object, which includes methods like `stringify()` and `parse()`.
 
 Also in 2009 a developer named Ryan Dahl decided to use Google's JavaScript V8 engine and make it work standalone, e.g. on a server. 
@@ -57,7 +58,7 @@ In JSON
 * string properties are double-quoted too
 * properties may be only of type
   * string
-  * number
+  * number (FP64, Number.MAX_SAFE_INTEGER = 9,007,199,254,740,991 = 2^53 - 1)
   * boolean
   * null
   * Object

@@ -2,7 +2,7 @@
 When styling a web page, there are many types of selectors available that allow developers to be as broad or as specific
 as they need to be when selecting HTML elements to apply CSS rules to.
 
-Here you will learn about some of the common CSS selectors that you will use as a developer.
+### Universal (`*`) Selector 
 
 ### Element Selectors
 The element selector allows developers to select HTML elements based on their element type.
@@ -150,7 +150,151 @@ a:hover {
 This pseudo-class is very useful for creating visual effects based on user interaction.
 
 ### Other Selectors
-There are many other CSS selectors available to style your webpage.
+* [Combinator selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators)
+* Class and Class, e.g. `.alpha.beta {}`
+* Element and Class: `p.alpha {}`
+* Element and Element: `p, div {}`
+* Elements inside Element (Descendant Selector): `p span {}` (all `<span>` elements inside `<p>`)
+
+Attribute selectors
+* *[attribute]* - `[href] { }` - all Elements with `href` attribute
+* *[attribute=value]* - `[lang="fr"] { }`
+* *[attribute~=value]* - *[input~=hello] { }* - Elements with `input` attribute containing a whole word `hello` (whitespace separated)
+* *[attribute|=value]* - `[lang|=en] { }` - values `en` and `en-GB` match (hyphen is OK)
+* `a[href^="https"]` - Every `<a>` element where `href` attribute value begins with "https"
+* `a[href$=".docx"] ` - Every `<a>` element with `href` attribute value ends with ".docx"
+* `a[href*="meta"]` - Every `<a>` element with `href` attribute value has substring "meta"
+
+
+## Pseudo-elements
+[Comprehensive list of pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
+* First letter
+```css
+li::first-letter {
+  color: coral;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 1;
+}
+```
+
+* First line
+```css
+ul {
+  list-style-type: none;
+}
+
+li::first-line {
+  color: lightseagreen;
+  text-decoration: underline;
+  line-height: 1;
+}
+```
+
+* Selection
+```css
+ul {
+  list-style-type: none;
+}
+
+li::selection {
+  color:brown;
+  background-color: antiquewhite;
+  line-height: 1;
+}
+```
+
+* Marker
+```css
+li::marker {
+    color: cornflowerblue;
+    content: '<> ';
+    font-size: 1.1em;
+}
+```
+
+* `::before` and `::after`
+```css
+#tips::before {
+    background: darkkhaki;
+    color:darkslategray;
+    content: "Tip:";
+    padding-left: 3px;
+    padding-right: 5px;
+    border-radius: 10%;
+}
+
+#tips::after {
+    background:darkkhaki;
+    color:darkslategray;
+    content: "!!";
+    padding-right: 5px;
+    border-radius: 20%;
+}
+```
+```html
+<p id="tips"> Don't rinse your pasta after it is drained. </p>
+<p> Slice the tomatoes. Take the extra efforts to seed them. </p>
+<p id="tips"> Peel and seed large tomatoes. </p>
+```
+
+### Pseudo-classes
+[Comprehensive list of pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+Pseudo-class - Example - Description of selection
+
+* :checked - `input:checked { }` - All the checked `<input>` elements
+* :default - `input:default { }` - All default `<input>` elements
+* :disabled - `input:disabled { }` - All disabled `<input>` elements
+* :empty - `div:empty { }` - All the `<div>` elements with no children
+* :enabled - `input:enabled { }` - All the enabled `<input>` elements
+* :first-child - `p:first-child { }` - All the `<p>` elements who are the first child of a parent element
+* :first-of-type - `p:first-of-type { }` - All the `<p>` element who are the first `<p>` element of a parent element
+* :focus - `input:focus { }` - Input element under focus
+* :fullscreen - `:fullscreen { }` - The element in full-screen mode
+* :hover - `p:hover { }` - Action effect on mouse hover
+* :invalid - `input:invalid { }` - Input elements with an invalid value
+* :last-child `p:last-child { }` - All the `<p>` elements who are the last child of a parent element
+* :last-of-type `p:last-of-type { }` - All the `<p>` elements who are the last `<p>` element of a parent element
+* :not(selector) - `:not(div) { }` - All the elements that are not a `<div>` element
+* :nth-child(n) - `div:nth-child(3) { }` - All the `<p>` elements that are the third child of a parent element
+* :nth-last-child(n) `div:nth-last-child(3) { }` All the `<div>` elements which are the third child of a parent element, counting from last child element
+* :nth-last-of-type(n) `p:nth-last-of-type(2) { }` - The second sibling from the last child of a parent element.
+* :nth-of-type(n) `p:nth-of-type(2) { }` - The second sibling of a parent element.
+* :only-of-type `p:only-of-type { }` - All the <p> elements which are only <p> elements inside its parent
+* :only-child `p:only-child { }` - All the `<p>` elements which are only child of a parent element
+* :optional `input:optional { }` - The input elements with no "required" attribute
+* :required `input:required { }` - Selects input elements with the "required" attribute specified
+* `:root { }` - The Root element of document
+* `::selection { }` - The portion of an element that is selected by a user
+* :valid - `input:valid { }` - All the input elements with a valid value
+
+### LVHA (link - visited - hover - active)
+* :link `a:link { }` - All unvisited links
+* :visited `a:visited { }` - Selects all visited links
+* :hover - `a:hover { }` - Action effect on mouse hover
+* :active - `a:active { }` - All active links
+
+## Specificity
+
+To calculate the specificity of the selector `ul#alpha li.visited`, 
+we need to break it down into its individual parts and count the occurrences
+of each category of selector:
+
+* IDs: #alpha - There is 1 ID selector.
+* Classes, attributes, and pseudo-classes: .visited - There is 1 class selector.
+* Elements and pseudo-elements: ul, li - There are 2 element selectors.
+
+The specificity is then represented as a three-part value: (IDs, Classes, Elements).
+
+Therefore, the specificity of `ul#alpha li.visited` is: (1, 1, 2)
+
+This means the selector has:
+* 1 ID selector
+* 1 class selector
+* 2 element selectors
+
+In terms of weight, ID selectors are the most specific, 
+followed by class/attribute/pseudo-class selectors, and then element/pseudo-element selectors.
 
 ## Text and color in CSS
 From CSS Version 3, there are five main ways to reference a color.

@@ -19,3 +19,11 @@ Image source: [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbo
 * gap
 * `flex: 0 1 auto;` - shorthand notation for `flex-grow: 0; flex-shrink: 1; flex-basis: auto;`
 * overflow: `hidden` - clip overflow content
+
+More links
+* https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+* https://learncssgrid.com/
+* https://web.dev/learn/css/grid/
+* https://www.educba.com/css-viewport/
+* https://1stwebdesigner.com/fascinating-css-grid-layout-examples-and-tutorials/
+* https://csslayout.io/ - defunct
