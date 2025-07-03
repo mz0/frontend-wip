@@ -3,17 +3,25 @@
 Бэкендер - это я, с опытом PHP, Python, Go, Java.
 Я прошёл не без труда половину курса Meta Frontend Developer, и решил сделать свой вариант курса.
 
-Приветствую, коллеги! Я - Марк, прошёл половину курса Meta Frontend Developer (ссылка в описании),
-многое мне в этом курсе не нравится, и я решил попробовать изложить свой вариант.
-
-Для освоения этого материала вам понадобится
-1. командная строка для запуска NodeJS, Git
-2. сами NodeJS, Git, плюс Visual Studio Code (VS Code)
+Приветствую, коллеги! Я - Марк, прошёл половину курса [Meta Frontend Developer](https://www.coursera.org/professional-certificates/meta-front-end-developer) - ссылка в описании,
+многое мне в этом курсе не нравится, например, что курс создан в 2021-2022 году, а недавнее "обновление", кажется, только добавило несуразностей.
 
 the stable release of React 19.0.0 was in December 2024.
 The current latest version is React 19.1.0 was released in March 2025.
+Я решил попробовать изложить свой вариант.
+
+Для освоения этого материала вам понадобится
+0. Internet и немного знаний HTML 5 и CSS 2 (
+1. командная строка для запуска npm, NodeJS, Git
+2. сами NodeJS (включая npm и yarn как часть corepack), Git, плюс Visual Studio Code (VS Code)
+
+Очень советую подружиться с Github, или хотя бы узнать его поближе.
+
+
+Facebook's Tom Occhino and Jordan Walke publicly introduced React on 29 May 2013 at the JSConf US conference.
+https://youtu.be/GW0rj4sNH2w?list=PL37ZVnwpeshF7AHpbZt33aW0brYJyNftx
 
 Инструкции для Windows я постараюсь подготовить к выходу этого видео на YouTube и
 выложить на GitHub (!!!).
 
-Пользователи
+Пользователи macOS
