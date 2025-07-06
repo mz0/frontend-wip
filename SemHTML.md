@@ -4,13 +4,12 @@
 
 Use the following tags to organize your HTML document into structured sections. 
 
-* `<header>` The header of a content section or the web page.
-  The web page header often contains the website branding or logo.
+* `<header>` The header of a content section or the web page. Often contains the website branding or logo.
 * `<nav>` The navigation links of a section or the web page.
-* `<footer>` The footer of a content section or the web page. On a web page, it often contains secondary links,
+* `<footer>` The footer of a content section or the web page. Often contains secondary links,
   the copyright notice, privacy policy and cookie policy links.
 * `<main>` Specifies the main content of a section or the web page.
-* `<aside>` A secondary set of content that is not required to understand the main content.
+* `<aside>` A sidebar or a call-out whose content is only indirectly related to the document's main content.
 * `<article>` An independent, self-contained block of content such as a blog post or product.
 * `<section>` A standalone section of the document that is often used within the body and article elements.
 * `<details>` A collapsed section of content that can be expanded if the user wishes to view it.
@@ -21,45 +20,65 @@ Use the following tags to organize your HTML document into structured sections.
 
 ## Content tags
 
-* `<blockquote>` Used to describe a quotation.
-* `<dd>` Used to define a description for the preceding `<dt>` element.
-* `<dl>` Used to define a description list.
-* `<dt>` Used to describe terms inside `<dl>` elements.
-* `<figcaption>` Defines a caption for a photo image.
+* `<blockquote>` quotation block
+* `<dd>` description for the preceding `<dt>` element.
+* `<dl>` "description list"
+* `<dt>` "description term" - inside `<dl>` element.
+* `<figcaption>` caption for a photo image.
 * `<figure>` Applies markup to a photo image.
-* `<hr>` Adds a horizontal line to the parent element.
-* `<li>` Used to define an item within a list.
+* `<li>` "listed item" - e.g. inside `<ol>`, `<ul>`.
 * `<menu>` A semantic alternative to `<ul>` tag.
-* `<ol>` Defines an ordered list.
-* `<p>` Defines a paragraph.
-* `<pre>` Used to represent preformatted text. Typically rendered in the web browser using a monospace font.
+* `<ol>` "ordered list" - numbered list, browser numbers the items automatically.
+* `<p>` Defines a paragraph. Note the [`dir` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/dir)
+  ```html
+  <p dir="ltr">English is written Left-to-Right.</p>
+  <p dir="rtl">السلام عليكم.</p>
+  <p dir="auto">עליכם שלום!</p>
+  ```
+* `<pre>` preformatted text block. Typically rendered in monospace font.
 * `<ul>` Unordered list
+
+### Decoration tags
+* `<hr>` "horizontal ruler"
 
 
 ## Inline tags
 
 * `<a>` An anchor link to another HTML document.
 * `<abbr>` Specifies that the containing text is an abbreviation or acronym.
-* `<b>` Bolds the containing text. When used to indicate importance use `<strong>` instead.
-* `<br>` A line break. Moves the subsequent text to a new line.
 * `<cite>` Defines the title of creative work (for example a book, poem, song, movie, painting or sculpture).
   The text in the `<cite>` element is usually rendered in italics.
 * `<code>` Indicates that the containing text is a block of computer code.
 * `<data>` Indicates machine-readable data.
-* `<em>` Emphasizes the containing text.
-* `<i>` The containing text is displayed in italics. Used to indicate idiomatic text or technical terms.
+* `<em>` "Emphasize" the containing text.
+* `<kbd>` - for denoting a keyboard key, e.g. `<kbd>Alt</kbd>`
 * `<mark>` The containing text should be marked or highlighted.
-* `<q>` The containing text is a short quotation.
+* `<progress>` - display an indicator showing the completion progress of a task, typically a progress bar.
+  `max` - a valid floating point number > 0 (default 1). Always starts at 0.
+  ```html
+  <label for="sstp">Study progress:</label>
+  <progress id="sstp" max="10" value="1">step 1 of 10</progress>
+  ```
+* `<q>` The containing text is a short inline quotation.
+* `<ruby>` - [suggest pronunciation for East Asian languages](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ruby)
+  ```html
+  <ruby> 漢 <rp>(</rp><rt>Kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp> </ruby>
+  ```
 * `<s>` Displays the containing text with a strikethrough or line through it.
 * `<samp>` The containing text represents a sample.
-* `<small>` Used to represent small text, such as copyright and legal text.
-* `<span>` A generic element for grouping content for CSS styling.
+* `<span>` A grouping content tag, like `<div>` but inline, e.g. for CSS styling, or setting *lang* / *dir* attributes
 * `<strong>` Displays the containing text in bold. Used to indicate importance.
 * `<sub>` The containing text is subscript text, displayed with a lowered baseline.
 * `<sup>` The containing text is superscript text, displayed with a raised baseline.
 * `<time>` A semantic tag used to display both dates and times.
-* `<u>` Displays the containing text with a solid underline.
 * `<var>` The containing text is a variable in a mathematical expression.
+
+### Inline decoration tags
+* `<b>` "bold". Better use `<strong>` to signal importance.
+* `<br>` A line "break". Moves the subsequent text to a new line.
+* `<i>` "italics". Used to indicate idiomatic text or technical terms.
+* `<small>` Used to represent small text, such as copyright and legal text.
+* `<u>` Displays the containing text with a solid underline.
 
 
 ## Embedded content and media tags
@@ -81,10 +100,10 @@ Use the following tags to organize your HTML document into structured sections.
 ## Table tags
 
 * `<table>` Defines a table element to display table data within a web page.
-* `<thead>` Represents the header content of a table. Typically contains one `<tr>` element.
-* `<tbody>` Represents the main content of a table. Contains one or more `<tr>` elements.
-* `<tfoot>` Represents the footer content of a table. Typically contains one `<tr>` element.
-* `<tr>` Represents a row in a table. Contains one or more `<td>` elements when used within `<tbody>` or `<tfoot>`.
+* `<thead>` "table header". Typically contains one `<tr>` element.
+* `<tbody>` the main content of a table. Contains one or more `<tr>` elements.
+* `<tfoot>` "table footer". Typically contains one `<tr>` element.
+* `<tr>` "table row". Contains one or more `<td>` elements when used within `<tbody>` or `<tfoot>`.
   When used within `<thead>`, contains one or more `<th>` elements.
 * `<td>` Represents a cell in a table. Contains the text content of the cell.
 * `<th>` Defines a header cell of a table. Contains the text content of the header.
@@ -254,5 +273,6 @@ Basic Metadata
 * [Facebook Object Debugger](https://developers.facebook.com/tools/debug/) - Facebook's official parser and debugger
 * [Google Rich Snippets Testing Tool](https://www.google.com/webmasters/tools/richsnippets) - Open Graph protocol support in specific verticals and Search Engines.
 * [OpenGraph for Java](https://github.com/callumj/opengraph-java)
-* [PyPoenGraph](https://pypi.python.org/pypi/PyOpenGraph)
+* [PyOpenGraph](https://pypi.python.org/pypi/PyOpenGraph)
+
 also PHP, Ruby, Perl, WordPress plugins.
