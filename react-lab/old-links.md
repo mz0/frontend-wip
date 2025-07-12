@@ -21,6 +21,11 @@
 * [Basic useState examples](https://beta.reactjs.org/apis/usestate#examples-basic)
 * [Synchronizing with effects - putting it all together](https://beta.reactjs.org/learn/synchronizing-with-effects#putting-it-all-together)
 
+* [React hook form](https://github.com/react-hook-form/react-hook-form) - examples of how React deals with certain form fields compared to traditional HTML tags, like the text area, select and file input tags. It also showcases how to handle multiple inputs by leveraging event.target.name and the implications of using null as a value in a controlled input.
+
+* [Formik](https://formik.org/) - the most popular open source form library for React.
+* [Yup](https://github.com/jquense/yup) - an open-source library that integrates perfectly with Formik. It allows you to set all your form validation rules declaratively.
+* [React-hook-form](https://github.com/react-hook-form/react-hook-form) - manage your form state and validation rules with ease.
 * [React Router v6](https://reactrouter.com/)
 * [webpack docs](https://webpack.js.org/guides/getting-started/)
 * [webpack asset management](https://webpack.js.org/guides/asset-management/)
