@@ -154,4 +154,34 @@ console.log('addToNums(randomNum, randomNum) is ', addTwoNums(randomNum, randomN
 * A *pure function* has no side-effects (no outer variable is changed; no "world" changes, e.g. via Browser
   API, console.log included; no use of `Math.random()` as that makes its behavior indeterministic)
 
+## Modules
+```js
+// User.js
+let userCount = 0;
 
+export default class User {
+  constructor(name, age) {
+    this.name = name
+    this.age = age
+    userCount++
+  }
+}
+
+export function printName(user) {
+  console.log(`User has the name ${user.name}`)
+}
+```
+### (Static) Imports
+* `import User, { printname } from "./User.js"`
+* `import Customer from "./User"` - rename *default*
+* `import { printName as printUserName } from "./User.js"`
+* `import * as AllImports from "./Users.js"` - {default: User, printName: printName}
+* `import { default as User, printAge } from "./User.js"`
+
+### HTML
+```html
+<script src="script.js" type="module"></script>
+```
+
+### Dynamic Imports
+[TODO Dynamic Imports digest](https://blog.webdevsimplified.com/2021-03/dynamic-module-imports/)
