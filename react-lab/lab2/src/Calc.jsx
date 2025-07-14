@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import "./App.css";
+import "./Calc.css";
 
 function App() {
   const inputRef = useRef(null);
