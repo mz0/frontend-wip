@@ -25,6 +25,11 @@
 * useMemo, a hook to guarantee referential equality on objects across rendering passes.
 * https://beta.reactjs.org/apis/react/useEffect#useeffect
 * [read props inside the child component](https://beta.reactjs.org/learn/passing-props-to-a-component#step-2-read-props-inside-the-child-component) - how to use destructuring assignment to get values out of the props object.
+* [The Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
+* [Fetching data with Effects](https://beta.reactjs.org/apis/react/useEffect#fetching-data-with-effects)
+
+* [MDN: how to use Promise](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
+* [MDN: async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
 * [MDN article on destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 (e.g. when invoking useState) - in more detail.
 
