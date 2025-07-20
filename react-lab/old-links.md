@@ -19,7 +19,15 @@
 * [Sharing State Between Components](https://beta.reactjs.org/learn/sharing-state-between-components)
 * [State as a Snapshot](https://beta.reactjs.org/learn/state-as-a-snapshot)
 * [Basic useState examples](https://beta.reactjs.org/apis/usestate#examples-basic)
+* [how to work with useState and some of the caveats involved](https://beta.reactjs.org/apis/react/useState#usestate)
 * [Synchronizing with effects - putting it all together](https://beta.reactjs.org/learn/synchronizing-with-effects#putting-it-all-together)
+* React.memo, an API that can be used in conjunction with Context Providers to prevent unnecessary re-renders in top-level components in the tree.
+* useMemo, a hook to guarantee referential equality on objects across rendering passes.
+* https://beta.reactjs.org/apis/react/useEffect#useeffect
+* [read props inside the child component](https://beta.reactjs.org/learn/passing-props-to-a-component#step-2-read-props-inside-the-child-component) - how to use destructuring assignment to get values out of the props object.
+* [MDN article on destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+(e.g. when invoking useState) - in more detail.
+
 
 * [React hook form](https://github.com/react-hook-form/react-hook-form) - examples of how React deals with certain form fields compared to traditional HTML tags, like the text area, select and file input tags. It also showcases how to handle multiple inputs by leveraging event.target.name and the implications of using null as a value in a controlled input.
 
