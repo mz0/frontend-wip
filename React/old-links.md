@@ -27,6 +27,9 @@
 * [read props inside the child component](https://beta.reactjs.org/learn/passing-props-to-a-component#step-2-read-props-inside-the-child-component) - how to use destructuring assignment to get values out of the props object.
 * [The Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
 * [Fetching data with Effects](https://beta.reactjs.org/apis/react/useEffect#fetching-data-with-effects)
+* [useReducer incl. lazy init](https://react.dev/reference/react/useReducer)
+* [useRef Hook](https://react.dev/reference/react/useRef)
+* [Reusing Logic with Custom Hooks](https://beta.reactjs.org/learn/reusing-logic-with-custom-hooks)
 
 * [MDN: how to use Promise](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
 * [MDN: async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
