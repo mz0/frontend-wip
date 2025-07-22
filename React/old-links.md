@@ -29,7 +29,9 @@
 * [Fetching data with Effects](https://beta.reactjs.org/apis/react/useEffect#fetching-data-with-effects)
 * [useReducer incl. lazy init](https://react.dev/reference/react/useReducer)
 * [useRef Hook](https://react.dev/reference/react/useRef)
+* [forwardRef](https://reactjs.org/docs/forwarding-refs.html) - deprecated in 19.
 * [Reusing Logic with Custom Hooks](https://beta.reactjs.org/learn/reusing-logic-with-custom-hooks)
+* [React Fragments](https://reactjs.org/docs/fragments.html)
 
 * [MDN: how to use Promise](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
 * [MDN: async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
@@ -39,9 +41,11 @@
 
 * [React hook form](https://github.com/react-hook-form/react-hook-form) - examples of how React deals with certain form fields compared to traditional HTML tags, like the text area, select and file input tags. It also showcases how to handle multiple inputs by leveraging event.target.name and the implications of using null as a value in a controlled input.
 
+* [Chakra-UI](https://chakra-ui.com/) - open-source component library
 * [Formik](https://formik.org/) - the most popular open source form library for React.
 * [Yup](https://github.com/jquense/yup) - an open-source library that integrates perfectly with Formik. It allows you to set all your form validation rules declaratively.
 * [React-hook-form](https://github.com/react-hook-form/react-hook-form) - manage your form state and validation rules with ease.
+* [Compound components with hooks](https://kentcdodds.com/blog/compound-components-with-react-hooks)
 * [React Router v6](https://reactrouter.com/)
 * [webpack docs](https://webpack.js.org/guides/getting-started/)
 * [webpack asset management](https://webpack.js.org/guides/asset-management/)
