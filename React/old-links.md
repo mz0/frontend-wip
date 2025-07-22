@@ -32,6 +32,8 @@
 * [forwardRef](https://reactjs.org/docs/forwarding-refs.html) - deprecated in 19.
 * [Reusing Logic with Custom Hooks](https://beta.reactjs.org/learn/reusing-logic-with-custom-hooks)
 * [React Fragments](https://reactjs.org/docs/fragments.html)
+* [Higher Order Components](https://reactjs.org/docs/higher-order-components.html)
+* [Render props](https://reactjs.org/docs/render-props.html)
 
 * [MDN: how to use Promise](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
 * [MDN: async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
@@ -42,6 +44,7 @@
 * [React hook form](https://github.com/react-hook-form/react-hook-form) - examples of how React deals with certain form fields compared to traditional HTML tags, like the text area, select and file input tags. It also showcases how to handle multiple inputs by leveraging event.target.name and the implications of using null as a value in a controlled input.
 
 * [Chakra-UI](https://chakra-ui.com/) - open-source component library
+* [Downshift](https://github.com/downshift-js/downshift) - open-source library that implements an autocomplete, combo box or select experience using the render prop pattern.
 * [Formik](https://formik.org/) - the most popular open source form library for React.
 * [Yup](https://github.com/jquense/yup) - an open-source library that integrates perfectly with Formik. It allows you to set all your form validation rules declaratively.
 * [React-hook-form](https://github.com/react-hook-form/react-hook-form) - manage your form state and validation rules with ease.
