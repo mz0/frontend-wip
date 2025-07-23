@@ -34,12 +34,16 @@
 * [React Fragments](https://reactjs.org/docs/fragments.html)
 * [Higher Order Components](https://reactjs.org/docs/higher-order-components.html)
 * [Render props](https://reactjs.org/docs/render-props.html)
+* [React testing library](https://testing-library.com/docs/react-testing-library/intro/)
 
+* [jest](https://jestjs.io/docs/getting-started)
 * [MDN: how to use Promise](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
 * [MDN: async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
 * [MDN article on destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 (e.g. when invoking useState) - in more detail.
 
+* [Atlassian: CI vs. CD vs. Continuous Deployment](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)
+* [Practical test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)
 
 * [React hook form](https://github.com/react-hook-form/react-hook-form) - examples of how React deals with certain form fields compared to traditional HTML tags, like the text area, select and file input tags. It also showcases how to handle multiple inputs by leveraging event.target.name and the implications of using null as a value in a controlled input.
 
