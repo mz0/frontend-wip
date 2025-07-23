@@ -17,37 +17,41 @@ import FullScreenSection from "./FullScreenSection";
 import useSubmit from "../hooks/useSubmit";
 import {useAlertContext} from "../context/alertContext";
 
-const LandingSection = () => {
+const ContactMe = () => {
   const {isLoading, response, submit} = useSubmit();
   const { onOpen } = useAlertContext();
 
   const formik = useFormik({
     initialValues: {
-      firstName: '',
-      email: '',
-      type: '',
-      comment: ''
+      firstName: "",
+      email: "",
+      type: "",
+      comment: "",
     },
-    onSubmit: (values) => submit('', values),
+
+    onSubmit: (values) => submit("", values),
+
     validationSchema: Yup.object({
-      firstName: Yup.string().required("Required"),
+      firstName: Yup.string().min(3, "Must be 3 characters or more.").required("Required"),
       email: Yup.string().email("Invalid email address").required("Required"),
-      type: Yup.string().required("Please choose one"),
-      comment: Yup.string().min(25, "Must be at least 25 characters").required("Required")
+      type: Yup.string().required("Please select enquiry"),
+      comment: Yup.string().min(25, "Must be 25 characters or more").required("Please type a comment"),
     }),
   });
 
   useEffect(() => {
-    console.log("response");
     if (response) {
-      console.log(response);
-      onOpen(response.type, response.message);
+      onOpen(response.type, response.message)
 
       if (response.type === 'success') {
-        formik.resetForm();
+        formik.resetForm()
       }
     }
   }, [response]);
+
+  // useEffect(() => { // uncomment to debug validation -> submission
+  //   console.log("Errors:", formik.errors, "Touched:", formik.touched, "Values:", formik.values);
+  // }, [formik.errors, formik.touched, formik.values]);
 
   return (
     <FullScreenSection
@@ -66,7 +70,9 @@ const LandingSection = () => {
                 <Input
                   id="firstName"
                   name="firstName"
-                  {...formik.getFieldProps("firstName")}
+                  type="text"
+                  {...formik.getFieldProps("firstName")} // same as
+                  // value={formik.values.firstName name="firstName" onChange={formik.handleChange} onBlur={formik.handleBlur}
                 />
                 <FormErrorMessage>{formik.errors.firstName}</FormErrorMessage>
               </FormControl>
@@ -80,13 +86,19 @@ const LandingSection = () => {
                 />
                 <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
               </FormControl>
-              <FormControl>
+              <FormControl isInvalid={formik.touched.type && formik.errors.type}>
                 <FormLabel htmlFor="type">Type of enquiry</FormLabel>
-                <Select id="type" name="type" color="black" bg="white">
+                <Select color="black" bg="white" // otherwise in a "dark" theme unfocused options are white-on-white
+                  id="type"
+                  name="type"
+                  {...formik.getFieldProps("type")}
+                >
+                  <option value="" disabled hidden>-- Please select an enquiry type --</option>
                   <option value="hireMe">Freelance project proposal</option>
                   <option value="openSource">Open source consultancy session</option>
                   <option value="other">Other</option>
                 </Select>
+                <FormErrorMessage>{formik.errors.type}</FormErrorMessage>
               </FormControl>
               <FormControl isInvalid={formik.touched.comment && formik.errors.comment}>
                 <FormLabel htmlFor="comment">Your message</FormLabel>
@@ -94,6 +106,7 @@ const LandingSection = () => {
                   id="comment"
                   name="comment"
                   height={250}
+                  type="text"
                   {...formik.getFieldProps("comment")}
                 />
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
@@ -109,4 +122,4 @@ const LandingSection = () => {
   );
 };
 
-export default LandingSection;
+export default ContactMe;
