@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -28,32 +28,38 @@ const socials = [
   },
   {
     icon: faStackOverflow,
-    url: "https://stackoverflow.com/users/228117/mz0",
+    url: "https://stackoverflow.com/users/228117",
   },
 ];
 
+/**
+* This component illustrates the use of the useRef and useEffect hooks.
+* useRef keeps a reference to a DOM element, used to tweak the header styles and run a transition animation.
+* useEffect subscribes to "scroll" events when the component is mounted, and unsubscribes when the component is unmounted.
+* Additionally, it showcases smooth scrolling to different sections of the page when clicking on the header elements.
+*/
 const Header = () => {
-  const [showHeader, setShowHeader] = useState(true);
-    const lastScrollY = useRef(0);
-    const headerRef = useRef();
+  const headerRef = useRef();
 
-    useEffect(() => {
+  useEffect(() => {
+    let prevScrollY = window.scrollY;
+
     const handleScroll = () => {
-        const currentScrollY = window.scrollY;
-
-        if (currentScrollY > lastScrollY.current) {
-        setShowHeader(false); // scrolling down
-        } else {
-        setShowHeader(true); // scrolling up
-        }
-
-        lastScrollY.current = currentScrollY;
+      const currentScrollY = window.scrollY;
+      const headerElement = headerRef.current;
+     if (!headerElement) { return; }
+     if (prevScrollY > currentScrollY) {
+       headerElement.style.transform = "translateY(0)";
+     } else {
+       headerElement.style.transform = "translateY(-200px)";
+     }
+     prevScrollY = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+  }, []);
 
   const handleClick = (anchor) => () => {
     const id = `${anchor}-section`;
@@ -75,7 +81,6 @@ const Header = () => {
       right={0}
       translateY={0}
       transition="transform 0.3s ease-in-out"
-      transform={showHeader ? "translateY(0)" : "translateY(-200px)"}
       backgroundColor="#18181b"
     >
       <Box color="white" maxWidth="1280px" margin="0 auto">
