@@ -1,7 +1,11 @@
 {
-  "name": "graded-assessment",
-  "version": "0.1.0",
+  "name": "iam-pete",
+  "version": "0.1.1",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/mz0/iam-pete"
+  },
   "dependencies": {
     "@chakra-ui/react": "^2.3.2",
     "@emotion/react": "^11.10.4",
