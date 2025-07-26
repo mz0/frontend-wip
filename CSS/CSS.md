@@ -284,16 +284,18 @@ of each category of selector:
 * Classes, attributes, and pseudo-classes: .visited - There is 1 class selector.
 * Elements and pseudo-elements: ul, li - There are 2 element selectors.
 
-The specificity is then represented as a three-part value: (IDs, Classes, Elements).
+The specificity is then represented as a 4-part value: (0, IDs, Classes, Elements).
 
-Therefore, the specificity of `ul#alpha li.visited` is: (1, 1, 2)
+(The 0 is for *Inline styles*: `<p style=“color: red;” id="warn">`)
+
+Therefore, the specificity of `ul#alpha li.visited` is: 0112
 
 This means the selector has:
 * 1 ID selector
 * 1 class selector
 * 2 element selectors
 
-In terms of weight, ID selectors are the most specific, 
+In terms of weight, ID selectors are the most specific (second only to inline-styles),
 followed by class/attribute/pseudo-class selectors, and then element/pseudo-element selectors.
 
 ## Text and color in CSS
