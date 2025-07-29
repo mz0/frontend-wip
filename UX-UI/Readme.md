@@ -45,3 +45,45 @@
 * [UI at its worst, an amusing but infuriating example of UI design](https://userinyerface.com/)
 * https://xd.adobe.com/ideas/process/ui-design/
 * [Basic methods](https://www.usability.gov/what-and-why/user-research.html#:~:text=User%20research%20focuses%20on%20understanding,of%20design%20on%20an%20audience.%E2%80%9D)
+
+## Design
+* [Dieter Ram](https://designmuseum.org/discover-design/all-stories/what-is-good-design-a-quick-look-at-dieter-rams-ten-principles)
+  * [Dieter Rams and his 10 “Good design” principle]((https://www.youtube.com/watch?v=4Cxr2h_wE344)
+
+* [Ben Schneiderman](https://www.interaction-design.org/literature/article/shneiderman-s-eight-golden-rules-will-help-you-design-better-interfaces)
+
+* [Jakob Nielsen and his 10 “Good design” principles](https://www.youtube.com/watch?v=6Bw0n6Jvwxk)
+
+* [improve online Form](https://uxplanet.org/the-18-must-do-principles-in-the-form-design-fe89d0127c92)
+* [Component design and ways of using them](https://wereheavyweight.medium.com/how-were-using-component-based-design-5f9e3176babb)
+* [form design and best principles](https://xd.adobe.com/ideas/principles/web-design/best-practices-form-design/)
+* [Design systems explained in detail](https://www.nngroup.com/articles/design-systems-101/)
+* [Current inspirational design systems](https://uxplanet.org/10-most-popular-design-systems-to-learn-from-in-2022-for-ux-designers-18a24843a860)
+
+### Components in UI design
+* A *design system* is set of reusable pre-made design components and patterns that can be used to design products at scale, for example, Google's Material Design and IBMs Carbon Design sytem.
+
+Successful design systems frequently have the following features:
+* Design guidelines
+* Design pattern library
+* UI kit or component library
+* Process design guidelines
+
+### Design principles
+* https://xd.adobe.com/ideas/principles/web-design/best-practices-form-design/
+* https://www.nngroup.com/articles/design-systems-101/
+* [Current inspirational design systems](https://uxplanet.org/10-most-popular-design-systems-to-learn-from-in-2022-for-ux-designers-18a24843a860)
+
+### Design tips
+* [Good tips to help improve any online form](https://uxplanet.org/the-18-must-do-principles-in-the-form-design-fe89d0127c92)
+* [Component design](https://wereheavyweight.medium.com/how-were-using-component-based-design-5f9e3176babb)
+* https://www.awwwards.com/31-examples-of-icons-in-navegation-menus.html
+* https://uxdesign.cc/7-principles-of-icon-design-e7187539e4a2
+* [Usability Evaluation](https://www.interaction-design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed/usability-evaluation)
+* [Interaction design evaluatiion: heuristic evaluation, walk-throughs, web analytics, A/B testing, predictive models](https://gayan1999malinda.medium.com/interaction-design-evaluation-methods-df8132cedbf9) - a meh compilation
+* https://www.interaction-design.org/literature
+
+## Words on Navigation
+* **Content Strategy** involves presenting the content in a meaningful way that will promote your products. It helps to align your client’s business and UX goals and it also assists in aligning your content around your personas and scenarios.
+  Prioritization > Organization > Presentation > Specifications
+* **Iinformation architecture** organize large volumes of content, navigation, and indexes. Card sorting exercise - with users
