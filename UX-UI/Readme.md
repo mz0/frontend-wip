@@ -3,6 +3,7 @@
 * https://xd.adobe.com/ideas/guides/ux-design-process-steps/
 * https://www.interaction-design.org/literature/article/design-thinking-getting-started-with-empathy
 * https://xd.adobe.com/ideas/process/ui-design/ui-vs-ux-design-understanding-similarities-and-differences/
+* Expedia discovered that one extraneous form field box alone was costing them $12 million in profits per year.
 
 ### User Research
 * https://www.interaction-design.org/literature/topics/user-research
@@ -87,3 +88,22 @@ Successful design systems frequently have the following features:
 * **Content Strategy** involves presenting the content in a meaningful way that will promote your products. It helps to align your client’s business and UX goals and it also assists in aligning your content around your personas and scenarios.
   Prioritization > Organization > Presentation > Specifications
 * **Iinformation architecture** organize large volumes of content, navigation, and indexes. Card sorting exercise - with users
+
+## Typography
+* [10 Principles for Typography in UI Design](https://uxdesign.cc/10-principles-for-typography-usage-in-ui-design-a8f038f43ffd)
+* [Typography and best practice](https://medium.com/eightshapes-llc/typography-in-design-systems-6ed771432f1e)
+* Robert Bringhurst "The Elements of Typographic Style"
+
+## Grids and constraints
+* https://www.youtube.com/watch?v=BsR9dKfkNuA
+* [How to use grids to improve visual hierarchy](https://uxplanet.org/how-i-use-grids-to-improve-visual-hierarchy-18af5214e8a1)
+
+## Wireframing
+https://www.interaction-design.org/literature/topics/wireframing
+
+## Usability testing
+
+* [Usability testing methodology](https://www.nngroup.com/articles/usability-testing-101/)
+* [How to write a usability test top tips](https://usabilitygeek.com/tips-for-writing-usability-test-script/)
+* [Usability testing methods](https://www.usability.gov/how-to-and-tools/methods/index.html)
+* [How to plan a usability test](https://www.usability.gov/how-to-and-tools/methods/planning-usability-testing.html)
