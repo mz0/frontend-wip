@@ -56,10 +56,12 @@
 * [Jakob Nielsen and his 10 “Good design” principles](https://www.youtube.com/watch?v=6Bw0n6Jvwxk)
 
 * [improve online Form](https://uxplanet.org/the-18-must-do-principles-in-the-form-design-fe89d0127c92)
+* [Best practices for form design](https://medium.com/nextux/form-design-best-practices-9525c321d759)
 * [Component design and ways of using them](https://wereheavyweight.medium.com/how-were-using-component-based-design-5f9e3176babb)
 * [form design and best principles](https://xd.adobe.com/ideas/principles/web-design/best-practices-form-design/)
 * [Design systems explained in detail](https://www.nngroup.com/articles/design-systems-101/)
 * [Current inspirational design systems](https://uxplanet.org/10-most-popular-design-systems-to-learn-from-in-2022-for-ux-designers-18a24843a860)
+* [Nathan Curtis: components and design systems, forms](https://medium.com/@nathanacurtis)
 
 ### Components in UI design
 * A *design system* is set of reusable pre-made design components and patterns that can be used to design products at scale, for example, Google's Material Design and IBMs Carbon Design sytem.
@@ -107,3 +109,30 @@ https://www.interaction-design.org/literature/topics/wireframing
 * [How to write a usability test top tips](https://usabilitygeek.com/tips-for-writing-usability-test-script/)
 * [Usability testing methods](https://www.usability.gov/how-to-and-tools/methods/index.html)
 * [How to plan a usability test](https://www.usability.gov/how-to-and-tools/methods/planning-usability-testing.html)
+
+## Prototyping
+https://www.nngroup.com/articles/ux-prototype-hi-lo-fidelity/
+
+## UI Components
+* [Creating a UI Component Design System](https://medium.muz.li/creating-a-ui-component-design-system-step-by-step-guide-5c18b5a2f529?gi=a1e51a702983)
+* [The architecture of a component](https://uxdesign.cc/the-architecture-of-a-component-526e88f9d93e)
+
+[UI elements](https://www.usability.gov/how-to-and-tools/methods/user-interface-elements.html)
+
+## Micro-interactions
+* [Micro-interactions: Designing with Details by Dan Saffer](https://fireart.studio/blog/microinteractions/)
+  1. Triggers (Manual / System, e.g. notifications)
+  2. Rules (in-app)
+  3. Feedback
+  4. Modes and Loops
+* *Micro-animations* can improve interaction and clarify interfaces. Micro-animations assist the user by providing visual feedback and displaying changes more clearly. It is possible to explain a lot using micro-animations without a single word.
+  * Simple user interfaces: user can see something directly happening > user gets a sense of direct manipulation.
+  * Context and change: some elements are sometimes hidden. Micro-animations can assist users in navigating and viewing all the information on a screen. (discover mode?)
+  * User concentration (Using too much animation flattens the hierarchy and weakens the message that you may want to convey to the user)
+  * Rewards for completing an action, such as submitting a form.
+
+
+* [Prototyping](https://www.interaction-design.org/literature/topics/prototyping)
+* [Micro-interactions](https://www.nngroup.com/articles/microinteractions/)
+* [Micro-Animations with Figma Tutorial](https://www.youtube.com/watch?v=0YIovQXnwBY)
+* [Test your prototype and gather feedback](https://www.interaction-design.org/literature/article/test-your-prototypes-how-to-gather-feedback-and-maximise-learning)
